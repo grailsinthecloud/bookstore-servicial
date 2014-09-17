@@ -15,8 +15,8 @@ class Book {
 
     static constraints = {
     	title maxSize: 100, unique: true
-    	website url: true
-    	rating range: 1..5, scale: 1
+    	website nullable: true, url: true
+    	rating nullable: true, range: 1..5, scale: 1
     	data nullable: true
     }
 
