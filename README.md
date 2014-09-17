@@ -1,4 +1,4 @@
 bookstore-servicial
-===================
+=========
 
-Bookstore app, with Services
+Sample app for domain mapping and validation, with services
