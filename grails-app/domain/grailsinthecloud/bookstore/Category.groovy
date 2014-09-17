@@ -5,11 +5,11 @@ class Category {
 	String name
 
 	Date dateCreated
-   	Date lastUpdated
+ 	Date lastUpdated
 
-   	static hasMany = [ books : Book ]
+ 	static hasMany = [ books : Book ]
 
-   	static belongsTo = Book
+ 	static belongsTo = Book
 
     static constraints = {
     }
