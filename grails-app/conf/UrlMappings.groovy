@@ -7,7 +7,12 @@ class UrlMappings {
             }
         }
 
+        "/books"(controller:"book") {
+			action = [GET:"index", PUT:"update", DELETE:"delete", POST:"save"]
+	   	}
+
         "/"(view:"/index")
         "500"(view:'/error')
 	}
+	
 }

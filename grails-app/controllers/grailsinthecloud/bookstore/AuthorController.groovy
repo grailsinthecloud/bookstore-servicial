@@ -5,6 +5,8 @@ import grails.converters.XML
 
 class AuthorController {
 
+	def authorService
+
 	static allowedMethods = [index: "GET", save: 'POST', delete: 'DELETE']
 
     def index() {
@@ -23,7 +25,9 @@ class AuthorController {
 
     	author.save()
 
-    	render author as JSON
+    	def nuevoAuthor = authorService.obtenerAuthor(author.id)
+
+    	render nuevoAuthor as JSON
 
     }
 
